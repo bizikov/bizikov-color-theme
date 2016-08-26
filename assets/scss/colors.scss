@@ -1,0 +1,64 @@
+// core variables
+
+$text-color: #000;
+$text-color-inverse: #fff;
+$base-color: #000;
+$icon-color: $text-color;
+$highlight-color: #e3ecdc; //#f9f5e4; // #ffdc9f;
+$notification-color: #fc6341;
+
+// global
+
+$body-background: #f7f7f7;
+
+$link: #388ecd; //#1d62f0;
+$link-focus: #bb3300;//#fc6341;
+
+$button-color: #3f739c;
+$button-text-color: #fff;
+
+$form-checked: $text-color;
+
+$page-title-action-color: #fff;
+$page-title-action-background: #2ecc71;
+
+$page-title-action-focus-color: $page-title-action-color;
+$page-title-action-focus-background: #27ae60;
+
+// admin menu & admin-bar
+
+$menu-text: $text-color; // not change
+$menu-icon: $icon-color; // not change
+$menu-background: #fff;
+
+$menu-highlight-text: $text-color; // not change
+$menu-highlight-icon: $text-color; // not change
+$menu-highlight-background: $highlight-color; // not change
+
+$menu-current-text: $menu-highlight-text; // not change
+$menu-current-icon: $menu-highlight-icon; // not change
+$menu-current-background: $menu-highlight-background; // not change
+
+$menu-submenu-text: $base-color;
+$menu-submenu-background: lighten( $highlight-color, 3% );
+
+$menu-submenu-focus-text: $link-focus; // not change
+$menu-submenu-current-text: $text-color; // not change
+
+$menu-bubble-text: #fff;
+$menu-bubble-background: #fd8c73;
+$menu-bubble-current-text: #fff;
+$menu-bubble-current-background: #fd8c73;
+
+$menu-collapse-text: #bdc3c7;
+$menu-collapse-icon: #bdc3c7;
+$menu-collapse-focus-text: darken($menu-collapse-text, 10%);
+$menu-collapse-focus-icon: darken($menu-collapse-icon, 10%);
+
+$adminbar-avatar-frame: lighten( $menu-background, 7% ); // not change
+$adminbar-input-background: lighten( $menu-background, 7% ); // not change
+
+$menu-customizer-text: mix( $base-color, $text-color, 40% ); // not change
+
+@import "_admin.scss";
+@import "_custom.scss";

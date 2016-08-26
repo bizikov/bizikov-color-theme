@@ -1,0 +1,78 @@
+/* temporary fix for admin-bar hover color */
+#wpadminbar .ab-top-menu > li:hover > .ab-item,
+#wpadminbar .ab-top-menu > li.hover > .ab-item,
+#wpadminbar > #wp-toolbar > #wp-admin-bar-root-default li:hover span.ab-label,
+#wpadminbar > #wp-toolbar > #wp-admin-bar-top-secondary li.hover span.ab-label,
+#wpadminbar .ab-top-menu > li > .ab-item:focus,
+#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
+#wpadminbar-nojs .ab-top-menu > li.menupop:hover > .ab-item,
+#wpadminbar .ab-top-menu > li.menupop.hover > .ab-item {
+	color: $text-color;
+}
+#wpadminbar #wp-admin-bar-user-info .display-name {
+	color: $menu-collapse-text;
+}
+
+#wpadminbar {
+	// Стили верхней панели
+	background: $menu-background;
+}
+
+#wpadminbar .ab-item,
+#wpadminbar a.ab-item,
+#wpadminbar > #wp-toolbar span.ab-label,
+#wpadminbar > #wp-toolbar span.noticon {
+	// Цвет текста в верхней панели
+	color: $text-color;
+}
+
+
+#wpbody .wrap h1 {
+	color: $text-color;
+}
+
+.wp-core-ui .button {
+	text-shadow: none !important;
+}
+
+#wp-content-editor-tools {
+	background-color: $body-background;
+}
+
+#adminmenu .current div.wp-menu-image:before,
+#adminmenu .wp-has-current-submenu div.wp-menu-image:before,
+#adminmenu a.current:hover div.wp-menu-image:before,
+#adminmenu a.wp-has-current-submenu:hover div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before,
+#adminmenu li.wp-has-current-submenu:hover div.wp-menu-image:before {
+	color: $text-color;
+}
+
+
+.wrap {
+	.page-title-action {
+		color: $page-title-action-color;
+		background-color: $page-title-action-background;
+	}
+	.notice-success, div.updated {
+		border-left-color: $page-title-action-background;
+	}
+}
+
+input[type=radio]:checked+label:before{
+	color: $text-color;
+}
+
+.theme-browser {
+	.theme {
+		border: 3px solid $highlight-color;
+		&.active {
+			border-color: $page-title-action-background;
+			.theme-actions {
+			   background: $text-color-inverse;
+		   }
+		}
+	}
+
+}
